@@ -1,0 +1,234 @@
+/* general styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+body {
+    font-family: "Roboto", Arial, sans-serif;    
+ 
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* header styles */
+  header {
+    color: #fff;
+    padding: 20px;
+    height: 100px;
+    position: fixed;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    
+  }
+
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: none;
+  }
+
+  header nav a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #18272F;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  header nav a::before {
+    content: '';
+    background-color: hsla(0, 0%, 98%, 0.181);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+  
+  header nav a:hover::before {
+    bottom: 0;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  /* main content styles */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 50%;
+    padding-top: 50px;
+    margin-left: 40px;
+  }
+  
+  .profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 40px;
+  }
+  
+  .profile h2 {
+    position: absolute;
+    top: 0px;
+    margin-top: 9%;
+    margin-left: 40px;
+    font-size: 26px;
+    
+  }
+  
+  .profile p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .profile p span {
+    font-weight: normal;
+  }
+  .details{
+    margin-top: 50px;
+  }
+  .details p {
+    margin-bottom: -10px;
+    text-transform: uppercase;
+  }
+  .table{
+    position: fixed;
+    width: 50%;
+    font-size: 16px;
+    margin-right: 5%;
+    right: 10px;
+    
+  }
+  .container_p{
+    display: flex;
+    padding-top: 100px;
+    
+  }
+  
+  .container h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.container h2 small {
+    font-size: 0.5em;
+}
+
+.responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.responsive-table .table-header {
+  background: linear-gradient(to right, #9c59b6, #e91e63);
+  font-size: 14px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.responsive-table .table-row {
+  background: linear-gradient(to right, #3498db, #8e44ad);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.responsive-table .col-1 {
+  flex-basis: 20%;
+  text-transform: uppercase;
+}
+.responsive-table .col-2 {
+  flex-basis: 70%;
+  text-transform: uppercase;
+}
+@media all and (max-width: 767px) {
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  .responsive-table li {
+    display: block;
+  }
+  .responsive-table .col {
+    flex-basis: 100%;
+    display: flex;
+    padding: 10px 0;
+  }
+  .responsive-table .col:before {
+    color: #6C7A89;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+} 

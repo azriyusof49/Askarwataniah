@@ -1,0 +1,152 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+canvas {
+  display: block;
+  
+}
+.content{
+  overflow: scroll;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+  
+}
+/* Style the form */
+#regForm {
+  background-color: #ffffff00;
+  margin: 50px auto;
+  padding: 40px;
+  color: #ffffff;
+  width: 70%;
+  min-width: 300px;
+  
+  
+}
+/*Hide field status*/
+#nama_anak {
+  display: none;
+}
+#nama_pasangan{
+  display: none;
+}
+#add{
+  display: none;
+}
+#remove{
+  display: none;
+}
+#add-more-kerja{
+  position: none;
+}
+#removekerja{
+  display: none;
+}
+::placeholder {
+  color: #ffffffbf;
+}
+/* Style the input fields */
+input {
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  background-color: #30d3974a;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  
+}
+select{
+  background-color: #09120f4a;
+  color: #ffffff;
+}
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #d377304a;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #117cbfab;
+}
+/* button animate */
+button {
+  --color: #ffffff;
+  background-color: #ffffff00;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: rgba(0, 0, 0, 0.644);
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: .3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+.religion {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+select{
+  margin-right: 10px;
+  
+}
+
+
